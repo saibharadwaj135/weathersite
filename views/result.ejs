@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body{
+          background-image: url(back4.jpg);
+          background-size: cover;
+          font-family: 'Lobster', cursive;
+          color: #83540d;
+      }
+     div{
+         align-items: center;
+         margin-left: 30%;
+         margin-top: 10%;
+     }
+     img{
+         width: 200px;
+         height: 200px;
+         
+     }
+     #temp{
+         font-size: 40px;
+     }
+     #weather{
+         font-size: 40px;
+     }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="<%= pic %>" alt="">
+        <p id="temp">The temperature is <%= tempe %> degress Celcius</p>
+         <p id="weather">Currently the weather is  <%= desc %></p>
+    </div>
+    
+</body>
+</html>

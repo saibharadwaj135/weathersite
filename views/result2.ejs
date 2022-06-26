@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  
+}
+
+body
+{
+  font-family: 'Roboto', sans-serif;
+  overflow: hidden;
+  background-image: url(back4.jpg);
+  background-size: cover;
+}
+
+div.widget
+{
+  position: relative;
+  width: 355px;
+  height: 160px;
+  margin: 250px auto;
+  background-color: #83540d;
+  border-radius: 9px;
+  padding: 25px;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+}
+
+
+div.date
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+div.city
+{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: white;
+}
+
+div.temp
+{
+  font-size: 81px;
+  color: white;
+  font-weight: 100;
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.right-panel
+{
+  position: absolute;
+  float: right;
+  top: 0;
+  margin-top: 35px;
+  padding-left: 10px;
+}
+p{
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+    </style>
+</head>
+<body>
+    <div class="widget">
+            
+        <div class="left-panel panel">
+            <div class="date">
+                <%= kindOfDay %>
+            </div>
+            <div class="city">
+                <%= city %>
+            </div>
+            <div class="temp"> 
+               <%= tempe %>&deg;
+            </div>
+           
+        </div>
+        <div class="right-panel panel">
+            <img src="<%= pic %>" alt="">
+        </div>
+        <p> Currently the weather is  <%= desc %></p>
+    </div>
+</body>
+</html>
+
